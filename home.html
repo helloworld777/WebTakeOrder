@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>我的主页</title>
+
+	</head>
+	<script>
+		
+		function weight(){
+			var s=document.getElementById("name").innerHTML;
+			alert(document.getElementById("name").innerHTML);
+		}
+		function edit(){
+			document.getElementById("name").innerHTML=document.getElementById("name").innerHTML+"lyw";
+			alert(document.getElementById("name").innerHTML);
+		}
+		function tizhi(){
+			
+			alert(document.getElementById("name").innerHTML);
+		}
+		function sport(){
+			
+			alert(document.getElementById("name").innerHTML);
+		}
+		function heart_rate(){
+			
+			alert(document.getElementById("name").innerHTML);
+		}
+		
+	</script>
+	<body style="background-color: #f0f0f0;">
+
+		<div style='background-color:#3399FF;'>
+
+			<img src="img/header.jpg" width="50px" height="50px" align="absmiddle" style="margin: 20px;border-radius: 500px"/>
+			<label style="color: #ffffff;" id="name">李白</label>
+			<label style="color: #ffffff; float:right;margin-top: 35px;margin-right: 30px;" onclick="edit()"
+				>编辑</label>
+		</div>
+		<div style="background-color: #F9F9F9;margin-top: 20px;height: 100px;" onclick="weight()">
+			<img src="img/weight.png " align="absmiddle" />
+			<label style="font-size: large;color: #818181;">体重</label>
+
+			<div style="display: inline; float: right;">
+				<label style="font-size: large; color: #818181;">未绑定设备</label>
+				<img src="img/go.png" align="absmiddle"/>
+			</div>
+		</div>
+		
+		<div style="background-color: #F9F9F9;margin-top: 20px;"  onclick="tizhi()">
+			<img src="img/tizhi.png" align="absmiddle" />
+			<label style="font-size: large;color: #818181;">体脂</label>
+
+			<div style="display: inline; float: right;">
+				<label style="font-size: large;color: #818181;">未绑定设备</label>
+				<img src="img/go.png" align="absmiddle" />
+			</div>
+		</div>
+		<div style="background-color: #F9F9F9;margin-top: 20px;" onclick="sport()">
+			<img src="img/sport.png" align="absmiddle" />
+			<label style="font-size: large;color: #818181;">运动</label>
+
+			<div style="display: inline; float: right;">
+				<label style="font-size: large;color: #818181;">未绑定设备</label>
+				<img src="img/go.png" align="absmiddle" />
+			</div>
+		</div>
+		<div style="background-color: #F9F9F9;margin-top: 20px;" onclick="heart_rate()">
+			<img src="img/heart_rate.png" align="absmiddle" />
+			<label style="font-size: large;color: #818181;">心率</label>
+
+			<div style="display: inline; float: right;">
+				<label style="font-size: large;color: #818181;">未绑定设备</label>
+				<img src="img/go.png" align="absmiddle" />
+			</div>
+		</div>
+	</body>
+	
+
+</html>
