@@ -6,77 +6,108 @@
 		<title>我的主页</title>
 
 	</head>
+	<style type="text/css">
+		.normal {
+			font-size: large;
+			color: #818181;
+			font-size: 60px;
+		}
+		
+		.header_font {
+			font-size: large;
+			color: #ffffff;
+			font-size: 30px;
+		}
+		
+		.list_style {
+			background-color: #F9F9F9;
+			margin-top: 20px;
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+	</style>
 	<script>
-		
-		function weight(){
-			var s=document.getElementById("name").innerHTML;
+		function weight() {
+			var s = document.getElementById("name").innerHTML;
 			alert(document.getElementById("name").innerHTML);
 		}
-		function edit(){
-			document.getElementById("name").innerHTML=document.getElementById("name").innerHTML+"lyw";
+
+		function edit() {
+			document.getElementById("name").innerHTML = document.getElementById("name").innerHTML + "lyw";
 			alert(document.getElementById("name").innerHTML);
 		}
-		function tizhi(){
-			
+
+		function tizhi() {
+
 			alert(document.getElementById("name").innerHTML);
 		}
-		function sport(){
-			
+
+		function sport() {
+
 			alert(document.getElementById("name").innerHTML);
 		}
-		function heart_rate(){
-			
+
+		function heart_rate() {
+
 			alert(document.getElementById("name").innerHTML);
 		}
-		
 	</script>
+
 	<body style="background-color: #f0f0f0;">
 
-		<div style='background-color:#3399FF;'>
+		<div style='background-color:#3399FF; '>
 
-			<img src="header.jpg" width="50px" height="50px" align="absmiddle" style="margin: 20px;border-radius: 500px"/>
-			<label style="color: #ffffff;" id="name">李白</label>
-			<label style="color: #ffffff; float:right;margin-top: 35px;margin-right: 30px;" onclick="edit()"
-				>编辑</label>
+			<img src="header.jpg" align="absmiddle" style="margin: 20px;border-radius: 200px" />
+			<label class="header_font" id="name">李白</label>
+
+			
+				<label class="header_font" onclick="edit()" style="float:right; margin-top: 100px; margin-right: 40px;">编辑</label>
+				
+
+			
+
 		</div>
-		<div style="background-color: #F9F9F9;margin-top: 20px;height: 100px;" onclick="weight()">
+		<div class="list_style" onclick="weight()">
+
 			<img src="weight.png " align="absmiddle" />
-			<label style="font-size: large;color: #818181;">体重</label>
+			<label class="normal">体重</label>
 
 			<div style="display: inline; float: right;">
-				<label style="font-size: large; color: #818181;">未绑定设备</label>
-				<img src="go.png" align="absmiddle"/>
+				<label class="normal">未绑定设备</label>
+				<img src="go.png" align="absmiddle" />
 			</div>
+
 		</div>
-		
-		<div style="background-color: #F9F9F9;margin-top: 20px;"  onclick="tizhi()">
+
+		<div class="list_style" onclick="tizhi()">
 			<img src="tizhi.png" align="absmiddle" />
-			<label style="font-size: large;color: #818181;">体脂</label>
+			<label class="normal">体脂</label>
 
 			<div style="display: inline; float: right;">
-				<label style="font-size: large;color: #818181;">未绑定设备</label>
+				<label class="normal">未绑定设备</label>
 				<img src="go.png" align="absmiddle" />
 			</div>
 		</div>
-		<div style="background-color: #F9F9F9;margin-top: 20px;" onclick="sport()">
+		<div class="list_style" onclick="sport()">
+
 			<img src="sport.png" align="absmiddle" />
-			<label style="font-size: large;color: #818181;">运动</label>
+			<label class="normal">运动</label>
 
 			<div style="display: inline; float: right;">
-				<label style="font-size: large;color: #818181;">未绑定设备</label>
+				<label class="normal">未绑定设备</label>
 				<img src="go.png" align="absmiddle" />
 			</div>
+
 		</div>
-		<div style="background-color: #F9F9F9;margin-top: 20px;" onclick="heart_rate()">
+		<div class="list_style" onclick="heart_rate()">
 			<img src="heart_rate.png" align="absmiddle" />
-			<label style="font-size: large;color: #818181;">心率</label>
+			<label class="normal">心率</label>
 
 			<div style="display: inline; float: right;">
-				<label style="font-size: large;color: #818181;">未绑定设备</label>
+				<label class="normal">未绑定设备</label>
 				<img src="go.png" align="absmiddle" />
 			</div>
 		</div>
 	</body>
-	
 
 </html>
